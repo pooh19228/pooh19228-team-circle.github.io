@@ -1,0 +1,498 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+/*기본색상*/
+
+:root {
+  --large-width: 1000px;
+  --middle-width: 768px;
+  --main-color: #53a62d;
+  --sub1-color: #9cd918;
+  --sub2-color: #b6d96a;
+  --sub3-color: #eaf2ce;
+}
+
+body {
+  font-size: 16px;
+}
+
+/*기본 설정: 페이지 전체*/
+
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* header */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* logo */
+.header_container {
+  display: flex;
+  justify-content: space-between;
+}
+.headA {
+  line-height: 70px;
+  padding: 0 20px;
+  background-color: var(--main-color);
+  color: black;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+}
+.headA img {
+  width: 30px;
+  height: 30px;
+}
+
+.headB .modal{
+  display: none;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: fixed;
+  right: 180px;
+  top: 100;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* 우측 fixed 버튼 */
+.fixed {
+  position: fixed;
+  background-color: white;
+  right: 0;
+  top: 350px;
+  border: 1px solid #2d2d2d;
+}
+.fixed .top {
+  border-bottom: 1px solid #2d2d2d;
+  padding: 10px;
+  margin: 0;
+}
+.fixed .a a,
+.b a,
+b {
+  text-decoration: none;
+}
+
+.fixed .bottom {
+  padding: 5px;
+  text-align: center;
+}
+
+.fixed .top:hover,
+.bottom:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* navigation */
+
+.headB ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  line-height: 70px;
+  color: #2d2d2d;
+}
+
+.headB a {
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.headB li:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #53a62d;
+}
+
+.conA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url(./images/back.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+  text-align: center;
+  padding: 0px;
+}
+.conA p {
+  margin-top: 100px;
+  margin-bottom: 0;
+  font-size: 30px;
+  color: white;
+}
+.conA a {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 30px;
+  border: 3px solid white;
+  color: white;
+  border-radius: 6px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.conA a:hover {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+}
+/* 아현 */
+/* section1 */
+.figure ul {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.figure ul li {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  margin-left: 80px;
+  text-align: center;
+}
+
+.st_img_box1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 60%;
+  overflow: hidden;
+}
+
+.st_img1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.st_img_box2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 60%;
+  overflow: hidden;
+}
+
+.st_img2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.st_img_box3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 60%;
+  overflow: hidden;
+}
+
+.st_img3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.st_img_box4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 60%;
+  overflow: hidden;
+}
+
+.st_img4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* section2 */
+.sec2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px; 
+}
+
+.sec2 h2{
+  margin-bottom: 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+.content{
+  display: flex;
+  justify-content: center;
+}
+
+.event{
+  margin-left: 80px;
+  margin-bottom: 30px;
+}
+
+.event:hover{
+  border: 1px solid #2d2d2d;
+  cursor: pointer;
+}
+
+.info{
+  font-size: 15px;
+  margin-left:10px;
+  margin-bottom: 50px;
+}
+
+/* 은수 section3 */
+
+.section3{
+  border-top: 1px solid #2d2d2d;
+}
+
+section .container {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.section3_box {
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.section3_img_box {
+  width: 200px;
+  height: 200px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.section3_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section3_text1 {
+  margin-left: 50px;
+}
+
+.section3_text2 {
+  flex: 1;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.section3_divx {
+  background: #eaf2ce;
+  padding: 10px;
+  width: 700px;
+}
+
+.section3_text3 {
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+footer {
+  background-color: #53a62d;
+  color: white;
+}
+
+footer .container {
+  padding: 30px 10px;
+}
+
+@media (max-width: 600px) {
+  footer .container {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    max-width: var(--large-width);
+    margin: auto;
+  }
+
+  .footA {
+    flex: 30%;
+  }
+
+  .footB {
+    flex: 30%;
+  }
+
+  .footC {
+    flex: 40%;
+  }
+}
+
+footer .container {
+  margin: auto;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footA {
+  border-right: 1px solid white;
+  flex: 1;
+}
+
+.footA_a {
+  margin-left: 150px;
+}
+
+.footA .footer_logo {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.footA .footer_logo .p {
+  flex: 1;
+}
+
+.footA ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footB {
+  border-right: 1px solid white;
+  flex: 1;
+}
+
+.footB .footB_ul {
+  margin-top: 59px;
+  margin-left: 50px;
+}
+
+.footB ul {
+  list-style: none;
+}
+
+.footC {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.footC_a {
+  margin-left: 50px;
+}
+
+.footC h2 {
+  font-size: 30px;
+}
+
+.footC p {
+  font-size: 25px;
+}

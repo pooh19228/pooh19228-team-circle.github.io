@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>동그라미</title>
+  <link rel="stylesheet" href="inquiry_style.css" />
+</head>
+
+<body>
+  <!-- 정우 -->
+  <header>
+    <div class="header_container">
+      <div class="headA">
+        <a href="index.html" class="headA"><img src="images/logo.png" alt="로고" />동그라미</a>
+      </div>
+      <nav class="headB">
+        <ul>
+          <li><a href="index.html">홈</a></li>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="qna.html">게시판</a></li>
+          <li><a href="inquiry.html" style="color: #53a62d;">문의</a></li>
+        </ul>
+      </nav>
+      <!-- 우측 fixed 버튼 -->
+      <div class="fixed">
+        <div class="top">
+          <div class="a">
+            <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" target="_blank">
+              <img src="images/kakao.svg" alt="카톡" />카톡상담</a>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="b">
+            <a href="inquiry.html"> ▲ TOP </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="section1">
+      <div class="img1" align="center"><img src="images/contract.png" alt=""></div>
+      <div class="text1">1. 상담신청서 접수</div>
+    </div>
+    <div class="section2">
+      <div class="img1"><img src="images/right.png" alt=""></div>
+    </div>
+    <div class="section3">
+      <div class="img1" align="center"><img src="images/doctor.png" alt=""></div>
+      <div class="text1">2. 여행 상담</div>
+    </div>
+    <div class="section4">
+      <div class="img1"><img src="images/right.png" alt=""></div>
+    </div>
+    <div class="section5" align="center">
+      <div class="img1"><img src="images/accept.png" alt=""></div>
+      <div class="text1">3. 여행 예약 접수</div>
+    </div>
+
+  </section>
+
+  <section class="st1">
+    <a href="./qna.html" class="button" id="bt1">QnA</a>
+    <a href="#" class="button" id="bt2" onclick="myFunction()">맞춤 상담 신청</a>
+  </section>
+
+  <section class="st2">
+  <div class="content" id="que">
+    <!-- Form -->
+    <table class="question">
+      <caption class="qtit" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 50px;">맞춤 상담 신청서</caption>
+      <tr>
+        <th class="th" scope="row">상담제목</th>
+        <td><input type="text" title="상담제목" class="wid20" placeholder="내용을 입력하세요" />
+        </td>
+      </tr>
+      <tr>
+        <th class="th" scope="row">신청인 이름</th>
+        <td><input type="text" title="상담제목" class="wid20" placeholder="내용을 입력하세요" />
+        </td>
+      </tr>
+      <tr>
+        <th class="th" scope="row">연락처</th>
+        <td><select lass="wid10" title="핸드폰 앞 자리 선택">
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+            <option value="019">019</option>
+          </select><input type="text" title="전화번호 앞" maxlength="4" lass="wid20" /><input type="text" title="전화번호뒤"
+            maxlength="4" lass="wid20" /></td>
+      </tr>
+      <tr>
+        <th class="th" scope="row">이메일</th>
+        <td><input type="text" class="wid53" title="이메일" placeholder="예 : abc123@abcdef.com"></td>
+      </tr>
+      <tr>
+        <th class="th" scope="row">여행지</th>
+        <td><input type="text" title="여행지" class="wid20" placeholder="내용을 입력하세요" />
+        </td>
+      </tr>
+      <tr>
+        <th class="th" scope="row">여행일자</th>
+        <td><input type="date" title="" class="" placeholder="">&nbsp;&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" title="" class="" placeholder=""></td>
+
+      </tr>
+      <tr>
+        <th class="th" scope="row">여행 형태</th>
+        <td>
+          <p>
+            <label>
+              <input type="radio" name="re_course" value="radio" id="program_0" value="종류1">
+              가족여행 </label>
+            <label>
+              <input type="radio" name="re_course" value="radio" id="program_1" value="종류2">
+              자유여행 </label>
+            <label>
+              <input type="radio" name="re_course" value="radio" id="program_2" value="종류3">
+              커플여행 </label>
+            <label>
+              <input type="radio" name="re_course" value="radio" id="program_3" value="종류4">
+              기타 </label>
+          </p>
+      </tr>
+      <tr>
+        <th class="th" scope="row">예상경비</th>
+        <td><select class="wid30" title="카테고리 선택">
+            <option value="">금액 선택</option>
+            <option value="1">~ 100만</option>
+            <option value="2">~ 300만</option>
+            <option value="3">~ 500만 이상</option>
+          </select>
+      </tr>
+      <tr>
+        <th class="th" scope="row">문의사항</th>
+        <td>
+          <textarea title="문의사항" placeholder="200자 이내(400byte)로 입력해 주세요"></textarea>
+        </td>
+      </tr>
+    </table>
+      <div class="btngreen">
+        <a href="#" class="Btn">신청하기</a>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("que").style.display = "block";
+    }
+  </script>
+  </section>
+
+    <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footA">
+          <div class="footA_a">
+            <div class="footer_logo">
+              <img width="40px" height="40px" src="images/logo.png" alt="" />
+              <p>동그라미</p>
+            </div>
+            <div class="footA_1">
+              <ul>
+                <li>대표이사: 이은수 이아현 양정우</li>
+                <li>주소: 경기 김포시 사우중로 48</li>
+                <li>사업자 번호: 123-12-12345</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footB">
+          <div class="footB_ul">
+            <ul>
+              <li>대표메일: dong-geulami12@dong-geulami.com</li>
+              <li>대표번호: 1544-1234</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footC">
+          <div class="footC_a">
+            <h2>문의전화</h2>
+            <p>1544-1234</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>

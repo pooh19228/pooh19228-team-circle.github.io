@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>동그라미</title>
+  <link rel="stylesheet" href="index_style.css" />
+</head>
+
+<body>
+  <!-- 정우 -->
+  <header>
+    <div class="header_container">
+      <div class="headA">
+        <a href="index.html" class="headA"><img src="images/logo.png" alt="로고" />동그라미</a>
+      </div>
+      <nav class="headB">
+        <ul>
+          <li><a href="index.html" style="color: #53a62d;">홈</a></li>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="qna.html">게시판</a></li>
+          <li><a href="inquiry.html">문의</a></li>
+          <li>
+            <!-- Button to open the modal -->
+            <button style="width:auto;" onclick="show_modal()">Login</button>
+
+            <div id="id01" class="modal">
+
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+
+                </div>
+
+                <div class="container">
+                  <label for="uname"><b>아이디</b></label>
+                  <input type="text" placeholder="아이디를 입력해주세요" name="uname" required>
+
+                  <br> <label for="psw"><b>비밀번호</b></label>
+                  <input type="password" placeholder="비밀번호를 입력해주세요" name="psw" required>
+
+                  <button type="submit">로그인</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> 자동로그인
+                  </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                  <a href="join.html"><button type="button"
+                      onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">회원가입</button></a>
+                  <span class="psw">비밀번호를 잊어버리셨나요?<a href="#">비밀번호 찾기</a></span>
+
+                </div>
+              </form>
+            </div>
+
+            <script>
+              var modal = document.getElementById('id01');
+
+              function show_modal() {
+                modal.style.display = "block";
+
+              }
+
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function (event) {
+                if (event.target == modal) {
+                  modal.style.display = "none";
+                }
+              }
+            </script>
+
+          </li>
+
+        </ul>
+      </nav>
+      <!-- 우측 fixed 버튼 -->
+      <div class="fixed">
+        <div class="top">
+          <div class="a">
+            <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" target="_blank">
+              <img src="images/kakao.svg" alt="카톡" />카톡상담</a>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="b">
+            <a href="index.html"> ▲ TOP </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="conA">
+    <div class="container-sec1">
+      <p>
+        자유 여행과 패키지 여행을 더한<br />동그라미의 세미 패키지여행을
+        소개합니다
+      </p>
+      <a href="inquiry.html">문의 하기</a>
+    </div>
+  </section>
+
+  <!-- 아현 -->
+  <section class="sec1">
+    <div class="figure">
+      <ul>
+        <li>
+          <div class="st_img_box1">
+            <img class="st_img1" src="images/asia.jpg" alt="아시아" />
+          </div>아시아
+        </li>
+        <li>
+          <div class="st_img_box2">
+            <img class="st_img2" src="images/europe.jpg" alt="유럽" />
+          </div>유럽
+        </li>
+        <li>
+          <div class="st_img_box3">
+            <img class="st_img3" src="images/america.jpg" alt="아메리카" />
+          </div>아메리카
+        </li>
+        <li>
+          <div class="st_img_box4">
+            <img class="st_img4" src="images/oceania.jpg" alt="오세아니아" />
+          </div>오세아니아
+        </li>
+      </ul>
+    </div>
+  </section>
+  <hr>
+
+  <section class="sec2">
+    <h2>이벤트</h2>
+    <div class="content">
+      <div class="event">
+        <img src="images/evc1.png" alt="이벤트1" />
+        <div class="info">
+          와이파이 <br>
+          도시락&amp;유심<br>
+          2022.08.17~2022.09.30
+        </div>
+      </div>
+      <div class="event">
+        <img src="images/evc2.png" alt="이벤트2" />
+        <div class="info">
+          내 마음대로 <br>
+          &lsquo;코비드 테스트 월드&rsquo;유심<br>
+          2022.10.17~2022.11.30
+        </div>
+      </div>
+      <div class="event">
+        <img src="images/evc3.png" alt="이벤트3" />
+        <div class="info">
+          DFS 괌&amp;사이판<br>
+          고정환율 프로모션<br>
+          2022.10.30~2022.12.15
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br>
+
+
+  <!-- 은수 -->
+  <section class="section3">
+    <div class="container">
+      <div class="section3_text1">
+        <h2>“엄마와 단둘이 한 첫 유럽 여행..."</h2>
+        <hr>
+        <div class="section3_box">
+          <div class="section3_img_box">
+            <img class="section3_img" src="images/picture.png" alt="" />
+          </div>
+          <div class="section3_text2">
+            <p>
+              대학생 시절부터 엄마와 둘이서만가는 유럽여행을 꿈꿨던
+              사람입니다. 그러나 시간도 사정도 여의치 않아 미뤄뒀던 그 여행을
+              이번 5월에 동그라미와 함께 하며 이뤘습니다. 엄마도 저도 이번
+              여행이 너무나 만족스러웠기에 돌아오는 비행기 안에서 다른 패키지
+              일정을 검색해봤을 정도로 이번에 동그라미와 함께 한 이탈리아,
+              스위스 여행은정말 최고로 즐겁고 행복한 여행이었습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section3_divx">
+        <div class="section3_text3">
+          <h2>
+            동그라미 <br />
+            고객 여행기
+          </h2>
+          <p>
+            '여행을 가볍게'<br />
+            동그라미와 함께한<br />
+            여러분들의<br />
+            즐거웠던 추억을<br />
+            공유해 보세요!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footA">
+          <div class="footA_a">
+            <div class="footer_logo">
+              <img width="40px" height="40px" src="images/logo.png" alt="" />
+              <p>동그라미</p>
+            </div>
+            <div class="footA_1">
+              <ul>
+                <li>대표이사: 이은수 이아현 양정우</li>
+                <li>주소: 경기 김포시 사우중로 48</li>
+                <li>사업자 번호: 123-12-12345</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footB">
+          <div class="footB_ul">
+            <ul>
+              <li>대표메일: dong-geulami12@dong-geulami.com</li>
+              <li>대표번호: 1544-1234</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footC">
+          <div class="footC_a">
+            <h2>문의전화</h2>
+            <p>1544-1234</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

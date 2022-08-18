@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>동그라미 - 회원가입</title>
+  <link rel="stylesheet" href="join_style.css" />
+</head>
+
+<body>
+  <!-- 정우 -->
+  <header>
+    <div class="header_container">
+      <div class="headA">
+        <a href="index.html" class="headA"><img src="images/logo.png" alt="로고" />동그라미</a>
+      </div>
+      <nav class="headB">
+        <ul>
+          <li><a href="index.html">홈</a></li>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="qna.html">게시판</a></li>
+          <li><a href="inquiry.html">문의</a></li>
+        </ul>
+      </nav>
+      <!-- 우측 fixed 버튼 -->
+      <div class="fixed">
+        <div class="top">
+          <div class="a">
+            <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" target="_blank">
+              <img src="images/kakao.svg" alt="카톡" />카톡상담</a>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="b">
+            <a href="inquiry.html"> ▲ TOP </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+  
+
+  </section>
+
+  
+  <section class="st2">
+  <div class="content" id="que">
+    <!-- Form -->
+    <table class="question">
+      <caption class="qtit" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 50px;">회원가입</caption>
+      <tr>
+        <th class="th" scope="row">이름</th>
+        <td><input type="text" title="이름" class="wid20" placeholder="내용을 입력하세요" />
+        </td>
+      </tr>
+      <tr>
+        <th class="th" scope="row">아이디</th>
+        <td><input type="id" title="아이디" class="wid20" placeholder="내용을 입력하세요" />
+        </td>
+      </tr>
+      <tr>
+        <th class="th" scope="row">비밀번호</th>
+        <td><input type="password" title="비밀번호" class="wid20" placeholder="6자리 이상 ~ 12자리 이하" />
+        </td>
+      </tr>
+      <tr>
+        <th class="th" scope="row">비밀번호 확인</th>
+        <td><input type="password" title="비밀번호" class="wid20" placeholder="6자리 이상 ~ 12자리 이하" />
+        </td>
+      </tr>
+      <tr>
+        <th class="th" scope="row">연락처</th>
+        <td><select lass="wid10" title="핸드폰 앞 자리 선택">
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+            <option value="019">019</option>
+          </select><input type="text" title="전화번호 앞" maxlength="4" lass="wid20" /><input type="text" title="전화번호뒤"
+            maxlength="4" lass="wid20" /></td>
+      </tr>
+      <tr>
+        <th class="th" scope="row">이메일</th>
+        <td><input type="text" class="wid53" title="이메일" placeholder="예 : abc123@abcdef.com"></td>
+      </tr>
+      <tr>
+        <th class="th" scope="row">생년월일</th>
+        <td><input type="date" title="" class="" placeholder="">
+
+      </tr>
+      <tr>
+        <th class="th" scope="row">성별</th>
+        <td>
+          <p>
+            <label>
+              <input type="radio" name="re_course" value="radio" id="program_0" value="종류1">
+              남 </label>
+            <label>
+              <input type="radio" name="re_course" value="radio" id="program_1" value="종류2">
+              여 </label>
+          </p>
+      </tr>
+
+    </table>
+      <div class="btngreen">
+        <a href="index.html" class="Btn">회원가입</a>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("que").style.display = "block";
+    }
+  </script>
+  </section>
+
+    <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footA">
+          <div class="footA_a">
+            <div class="footer_logo">
+              <img width="40px" height="40px" src="images/logo.png" alt="" />
+              <p>동그라미</p>
+            </div>
+            <div class="footA_1">
+              <ul>
+                <li>대표이사: 이은수 이아현 양정우</li>
+                <li>주소: 경기 김포시 사우중로 48</li>
+                <li>사업자 번호: 123-12-12345</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footB">
+          <div class="footB_ul">
+            <ul>
+              <li>대표메일: dong-geulami12@dong-geulami.com</li>
+              <li>대표번호: 1544-1234</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footC">
+          <div class="footC_a">
+            <h2>문의전화</h2>
+            <p>1544-1234</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
